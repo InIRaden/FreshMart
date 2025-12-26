@@ -1,0 +1,45 @@
+.shop-container {
+  padding: 2rem 1rem;
+}
+
+.shop-filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.shop-filters .form-control {
+  flex: 1;
+  min-width: 150px;
+}
+
+.shop-filters .form-control:first-child {
+  flex: 2;
+  min-width: 200px;
+}
+
+@media (max-width: 768px) {
+  .shop-container {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .shop-filters {
+    gap: 0.75rem;
+  }
+
+  .shop-filters .form-control {
+    min-width: 120px;
+  }
+
+  .shop-filters .form-control:first-child {
+    min-width: 100%;
+    flex: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .shop-filters .form-control {
+    min-width: 100%;
+  }
+}
